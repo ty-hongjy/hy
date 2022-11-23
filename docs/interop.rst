@@ -88,7 +88,7 @@ You can use the function ``run_repl()`` to launch the Hy REPL from Python:
 .. code-block:: python
 
     >>> import hy.cmdline
-    >>> hy.cmdline.run_repl()
+    >>> hy.cmdline.HyREPL().run()
     hy 0.12.1 using CPython(default) 3.6.0 on Linux
     => (defn foo [] (print "bar"))
     => (test)
@@ -100,7 +100,7 @@ argument:
 .. code-block:: python
 
     >>> import hy.cmdline
-    >>> hy.cmdline.run_repl(spy=True)
+    >>> hy.cmdline.HyREPL(spy=True).run()
     hy 0.12.1 using CPython(default) 3.6.0 on Linux
     => (defn test [] (print "bar"))
     def test():
