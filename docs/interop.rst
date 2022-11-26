@@ -87,8 +87,8 @@ You can use :meth:`hy.REPL.run` to launch the Hy REPL from Python:
 
 .. code-block:: text
 
-    >>> import hy
-    >>> hy.REPL(locals = locals()).run()
+    >>> import hy.cmdline
+    >>> hy.cmdline.HyREPL().run()
     Hy x.y.z using CPython(default) x.y.z on Linux
     => (defn test [] (print "bar"))
     => (test)
